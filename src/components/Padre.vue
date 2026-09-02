@@ -10,12 +10,14 @@
 import Hijo from './Hijo.vue'
 import HijoBoton from './HijoBoton.vue'
 import Contacto from './Contacto.vue'
+import Tareas from './Tareas.vue'
 
 export default {
     components: {
         Hijo,
         HijoBoton,
-        Contacto
+        Contacto,
+        Tareas
     },
     data() {
         return {

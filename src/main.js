@@ -1,7 +1,6 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
-import router from './router'
 
-createApp(App).use(router).mount('#app')
-
+// Actividad 7: sin Vue Router — la navegación es por pestañas (v-if en App.vue)
+createApp(App).mount('#app')

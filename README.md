@@ -51,3 +51,13 @@ La vista `ContactoView.vue` incluye un formulario implementado con `v-model` par
 - **Auto-selección:** Si el usuario llega desde la vista de Servicios (tras usar el botón "Continuar a Contacto" del banner), el `id` del servicio viaja por query param en el Router (`$route.query.servicio`) y preselecciona automáticamente el servicio en el formulario.
 - **Validaciones:** Al enviar el formulario, se valida que los datos obligatorios existan y tengan el formato correcto (ej. regex para email). Se muestra texto de error debajo de cada input defectuoso.
 - **Confirmación:** Si los datos son válidos, se utiliza `v-if` / `v-else` para ocultar el formulario y mostrar un mensaje de confirmación que incluye un resumen de los datos proporcionados (Nombre, Servicio y Correo).
+
+---
+
+## Parte 6 – Diseño y revisión final
+Se realizó una mejora estética global en la aplicación mediante modificaciones en `style.css` y las vistas, aplicando los siguientes principios de diseño:
+- **Tipografía Moderna:** Se integraron las fuentes de Google Fonts "Inter" para el cuerpo y "Outfit" para los títulos, mejorando la legibilidad y entregando un aspecto *premium*.
+- **Paleta de Colores:** Se definió una paleta basada en variables CSS (`--color-primary`, `--color-surface`, etc.) con tonos azules vibrantes para un perfil tecnológico, logrando consistencia en todas las vistas.
+- **Micro-interacciones y Efectos:** Se implementaron transiciones (`transition`), sombras (`box-shadow`) y efectos `:hover` en tarjetas (`ServicioItem`) y botones para un diseño dinámico.
+- **Layout y Responsividad:** Se utilizó `flexbox` y `CSS Grid` para la organización de elementos (catálogo de servicios, formulario a dos columnas) asegurando la adaptación a dispositivos móviles (ej. `grid-template-columns: 1fr` en pantallas pequeñas).
+- **Consistencia Visual:** Todas las vistas comparten un layout (`.view-container`, `.page-layout`) con animaciones de entrada (`fadeIn`) para mantener la identidad visual común de TechNova Solutions.

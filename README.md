@@ -34,3 +34,12 @@ Se creó el componente reutilizable **`ServicioItem.vue`**, el cual:
 - Representa visualmente cada servicio en forma de tarjeta.
 - Recibe los datos completos del servicio desde el componente padre mediante una única **prop** de tipo Object (`servicio`).
 - Formatea el precio a moneda chilena (CLP) o indica "A convenir".
+
+---
+
+## Parte 4 – Filtros, condicionales e interacción
+Se implementó un sistema de búsqueda y filtrado de servicios en `ServiciosView.vue`:
+- **Filtros (`v-model`):** Búsqueda por texto (nombre/descripción) y un menú desplegable para filtrar por categoría.
+- **`computed`:** La propiedad `serviciosFiltrados` se encarga de aplicar los filtros sin modificar el arreglo original de servicios.
+- **`v-if` / `v-else`:** Muestra un estado vacío si ningún servicio coincide con los filtros, e incluye un botón para limpiar filtros.
+- **Interacción (`emit`):** Cada componente `ServicioItem.vue` tiene un botón "Me interesa". Al hacer clic, emite el evento `seleccionar` hacia el padre, el cual almacena el servicio seleccionado, muestra un *banner* en la parte superior y permite navegar a la vista de Contacto pasando el ID mediante la URL.

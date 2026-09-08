@@ -11,7 +11,13 @@
     
     <div class="servicio-footer">
       <span class="precio">{{ formatearPrecio(servicio.precio) }}</span>
-      <!-- Parte 4: El botón se añadirá en la siguiente fase -->
+      <button 
+        class="btn-interesa" 
+        :disabled="!servicio.disponible"
+        @click="$emit('seleccionar', servicio)"
+      >
+        {{ servicio.disponible ? 'Me interesa' : 'Agotado' }}
+      </button>
     </div>
   </div>
 </template>
@@ -25,6 +31,7 @@ export default {
       required: true
     }
   },
+  emits: ['seleccionar'],
   methods: {
     formatearPrecio(valor) {
       if (!valor || valor === 0) return 'A convenir';

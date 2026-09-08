@@ -13,17 +13,14 @@
 
     <section class="features">
       <div class="feature-card">
-        <div class="feature-icon">⚡</div>
         <h3>Rápido y Eficiente</h3>
         <p>Optimizamos tus procesos para que tu equipo trabaje sin interrupciones.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">🔒</div>
         <h3>Seguro</h3>
         <p>Protegemos tu información con los más altos estándares de seguridad.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">📈</div>
         <h3>Escalable</h3>
         <p>Soluciones diseñadas para crecer junto con tu negocio.</p>
       </div>

@@ -2,7 +2,6 @@
   <nav class="navbar">
     <div class="navbar-brand">
       <router-link to="/" class="navbar-item">
-        <span class="icon">🚀</span>
         TechNova
       </router-link>
     </div>

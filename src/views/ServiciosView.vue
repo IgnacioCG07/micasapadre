@@ -8,7 +8,6 @@
     <!-- Servicio seleccionado banner -->
     <div v-if="servicioSeleccionado" class="selected-banner">
       <div class="selected-info">
-        <span class="icon">✅</span>
         <div>
           <strong>Servicio de interés seleccionado:</strong> {{ servicioSeleccionado.nombre }}
         </div>
@@ -48,7 +47,6 @@
     </div>
     
     <div v-else class="empty-state">
-      <div class="empty-icon">🔍</div>
       <h3>No se encontraron servicios</h3>
       <p>Intenta ajustar los filtros de búsqueda para encontrar lo que necesitas.</p>
       <button class="btn btn-secondary" @click="limpiarFiltros">Limpiar Filtros</button>

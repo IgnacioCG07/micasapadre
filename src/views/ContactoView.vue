@@ -12,10 +12,10 @@
         <p>Estamos aquí para ayudarte. Contáctanos por cualquiera de nuestros canales.</p>
         
         <ul class="info-list">
-          <li><strong>📍 Dirección:</strong> Av. Libertad 123, Chillán, Región de Ñuble</li>
-          <li><strong>📞 Teléfono:</strong> +56 9 1234 5678</li>
-          <li><strong>✉️ Correo:</strong> contacto@technova.cl</li>
-          <li><strong>🕒 Horario:</strong> Lunes a Viernes, 09:00 - 18:00 hrs</li>
+          <li><strong>Dirección:</strong> Av. Libertad 123, Chillán, Región de Ñuble</li>
+          <li><strong>Teléfono:</strong> +56 9 1234 5678</li>
+          <li><strong>Correo:</strong> contacto@technova.cl</li>
+          <li><strong>Horario:</strong> Lunes a Viernes, 09:00 - 18:00 hrs</li>
         </ul>
       </div>
 
@@ -23,7 +23,6 @@
       <div class="contact-form-container">
         <!-- Mensaje de éxito -->
         <div v-if="enviado" class="success-message">
-          <div class="success-icon">✅</div>
           <h3>¡Mensaje Enviado!</h3>
           <p>Gracias por contactarnos, <strong>{{ form.nombre }}</strong>.</p>
           <p>Hemos recibido tu consulta sobre <strong>{{ obtenerNombreServicio(form.servicioInteres) }}</strong>.</p>

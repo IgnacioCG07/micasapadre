@@ -43,3 +43,11 @@ Se implementó un sistema de búsqueda y filtrado de servicios en `ServiciosView
 - **`computed`:** La propiedad `serviciosFiltrados` se encarga de aplicar los filtros sin modificar el arreglo original de servicios.
 - **`v-if` / `v-else`:** Muestra un estado vacío si ningún servicio coincide con los filtros, e incluye un botón para limpiar filtros.
 - **Interacción (`emit`):** Cada componente `ServicioItem.vue` tiene un botón "Me interesa". Al hacer clic, emite el evento `seleccionar` hacia el padre, el cual almacena el servicio seleccionado, muestra un *banner* en la parte superior y permite navegar a la vista de Contacto pasando el ID mediante la URL.
+
+---
+
+## Parte 5 – Formulario de contacto
+La vista `ContactoView.vue` incluye un formulario implementado con `v-model` para los campos: Nombre, Correo, Teléfono, Servicio de interés y Mensaje.
+- **Auto-selección:** Si el usuario llega desde la vista de Servicios (tras usar el botón "Continuar a Contacto" del banner), el `id` del servicio viaja por query param en el Router (`$route.query.servicio`) y preselecciona automáticamente el servicio en el formulario.
+- **Validaciones:** Al enviar el formulario, se valida que los datos obligatorios existan y tengan el formato correcto (ej. regex para email). Se muestra texto de error debajo de cada input defectuoso.
+- **Confirmación:** Si los datos son válidos, se utiliza `v-if` / `v-else` para ocultar el formulario y mostrar un mensaje de confirmación que incluye un resumen de los datos proporcionados (Nombre, Servicio y Correo).

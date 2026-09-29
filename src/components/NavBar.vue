@@ -9,6 +9,7 @@
       <router-link to="/" class="navbar-item" active-class="is-active">Inicio</router-link>
       <router-link to="/nosotros" class="navbar-item" active-class="is-active">Nosotros</router-link>
       <router-link to="/servicios" class="navbar-item" active-class="is-active">Servicios</router-link>
+      <router-link to="/emprendedores" class="navbar-item" active-class="is-active">Emprendedores</router-link>
       <router-link to="/contacto" class="navbar-item" active-class="is-active">Contacto</router-link>
     </div>
   </nav>

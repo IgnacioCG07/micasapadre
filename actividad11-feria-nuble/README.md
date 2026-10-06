@@ -1,31 +1,25 @@
-# Actividad 11 - Feria Artesanal de Ñuble
+# Actividad 12 - SPA con Vue Router y Favoritos
 
 ## Objetivo
-Construir un catálogo web interactivo completo, utilizando Vue.js para aplicar conceptos fundamentales de desarrollo frontend.
+Transformar el proyecto de la Feria Artesanal de Ñuble en una aplicacion de una sola pagina (SPA) utilizando Vue Router, componentes y favoritos persistentes.
 
-## Conceptos aplicados
-- v-model
-- v-if / v-else
-- v-show
-- v-for
-- computed
-- props y eventos
+## Funcionalidades
+- Navegacion mediante RouterLink.
+- Rutas para Inicio, Productos, Favoritos y Contacto.
+- Ruta dinamica para detalle de producto.
+- Pagina 404.
+- Filtro de productos.
+- Componentes reutilizables.
+- Props y emit.
+- Favoritos persistentes mediante localStorage.
 
-## Ejecutar
-Para instalar las dependencias y levantar el servidor de desarrollo, ejecuta los siguientes comandos en la terminal:
+## Tecnologias
+- Vue 3
+- Vite
+- Vue Router
+- JavaScript
+- CSS
+- localStorage
 
-```bash
-npm install
-npm run dev
-```
-
-## Estructura
-- App.vue: Componente principal que integra el catalogo, el buscador y el selector de categorias.
-- ProductoCard.vue: Componente que renderiza la tarjeta individual de cada producto, recibiendo sus datos por props.
-- ProductoModal.vue: Componente que muestra una ventana modal con el detalle ampliado del producto seleccionado.
-- productos.js: Archivo de datos que contiene el arreglo de productos disponibles en el catalogo.
-
-## Cambios realizados
-- Se agrego un cuarto producto (Longaniza de Chillan) con su respectiva categoria al listado base.
-- Se actualizo el texto del encabezado principal para dar mas contexto local sobre los emprendedores de Nuble.
-- Se incorporo un mensaje visual que alerta al usuario cuando el catalogo de productos esta oculto.
+## Desafio Individual
+Se agrego un producto nuevo al catalogo (Vino Pipeno de Portezuelo, categoria Bebidas). Este producto incluye su propia imagen, categoria y comuna, y aparece correctamente en el listado del catalogo, se puede buscar por texto y su detalle se muestra mediante la ruta dinamica, ademas de poder agregarse a favoritos. El archivo modificado fue `src/data/productos.js`.

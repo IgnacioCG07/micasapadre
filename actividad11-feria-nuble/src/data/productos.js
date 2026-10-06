@@ -1,39 +1,47 @@
-import imgQueso from '../assets/img/quesos-chillan.jpg'
-import imgMiel from '../assets/img/miel-chillan.jpg'
-import imgTejidos from '../assets/img/tejidos-chillan.jpg'
-import imgLonganiza from '../assets/img/longaniza-chillan.jpg'
-
 export const productos = [
   {
     id: 1,
-    nombre: 'Queso Chanco de San Carlos',
-    precio: 4500,
-    categoria: 'Lácteos',
-    imagen: imgQueso,
-    descripcion: 'Queso artesanal de vaca, maduración media, tradicional de Ñuble.'
+    nombre: 'Miel de Las Trancas',
+    categoria: 'Alimentos',
+    comuna: 'Pinto',
+    precio: 7500,
+    descripcion: 'Miel artesanal producida en sectores cordilleranos de Ñuble.',
+    imagen: '/img/miel.jpg'
   },
   {
     id: 2,
-    nombre: 'Miel de Quillón',
-    precio: 3500,
-    categoria: 'Miel',
-    imagen: imgMiel,
-    descripcion: 'Miel multifloral de productores locales, sin aditivos.'
+    nombre: 'Canasto de mimbre',
+    categoria: 'Artesanía',
+    comuna: 'Chillán',
+    precio: 15990,
+    descripcion: 'Canasto elaborado artesanalmente con fibras naturales.',
+    imagen: '/img/canasto.jpg'
   },
   {
     id: 3,
-    nombre: 'Poncho tejido de Coihueco',
-    precio: 22000,
-    categoria: 'Textil',
-    imagen: imgTejidos,
-    descripcion: 'Poncho de lana natural, tejido a telar por artesanas de la zona.'
+    nombre: 'Mermelada de frutos rojos',
+    categoria: 'Alimentos',
+    comuna: 'San Carlos',
+    precio: 4500,
+    descripcion: 'Mermelada artesanal elaborada con frutos de temporada.',
+    imagen: '/img/mermelada.jpg'
   },
   {
     id: 4,
-    nombre: 'Longaniza de Chillán',
-    precio: 6500,
-    categoria: 'Embutidos',
-    imagen: imgLonganiza,
-    descripcion: 'Longaniza tradicional ahumada, elaborada con receta típica de Chillán.'
+    nombre: 'Tejido artesanal',
+    categoria: 'Textiles',
+    comuna: 'Yungay',
+    precio: 18990,
+    descripcion: 'Producto textil elaborado manualmente por artesanos de Ñuble.',
+    imagen: '/img/tejido.jpg'
+  },
+  {
+    id: 5,
+    nombre: 'Vino Pipeño',
+    categoria: 'Bebidas',
+    comuna: 'Portezuelo',
+    precio: 5000,
+    descripcion: 'Vino pipeño tradicional, elaborado con uvas de la zona.',
+    imagen: '/img/vino.jpg'
   }
 ]

@@ -10,3 +10,77 @@
 body { margin: 0; min-width: 320px; min-height: 100vh; }
 button, input, select { font: inherit; }
 button { cursor: pointer; }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 7%;
+  background: #174a7e;
+  color: white;
+}
+.navbar nav {
+  display: flex;
+  gap: 18px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+.navbar a.router-link-active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.pagina {
+  width: min(1100px, 92%);
+  margin: 32px auto;
+}
+.hero {
+  min-height: 60vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 40px 8%;
+}
+.filtros {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+.detalle-producto {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) 1fr;
+  gap: 32px;
+  align-items: start;
+}
+.detalle-producto img {
+  width: 100%;
+  border-radius: 12px;
+}
+.formulario {
+  display: grid;
+  gap: 10px;
+  max-width: 650px;
+}
+.formulario input,
+.formulario textarea,
+.formulario select {
+  padding: 10px;
+}
+.error { color: #b42318; }
+.correcto { color: #18794e; }
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .detalle-producto {
+    grid-template-columns: 1fr;
+  }
+}
